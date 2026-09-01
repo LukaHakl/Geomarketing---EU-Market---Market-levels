@@ -1,0 +1,9 @@
+# Pinned to what the 2026-07 build actually ran on. Both are pure-ish wheels
+# on Windows/macOS/Linux for CPython 3.12-3.14; no compiler needed.
+requests==2.34.2
+shapely==2.1.2
+
+# Nothing else. The GeoJSON writer, the colour ramps, the point-in-polygon
+# counting and the SVG previews are all stdlib + shapely on purpose: this is a
+# script a stranger should be able to run after one pip install, not a
+# geopandas/GDAL stack that takes an afternoon to provision.
