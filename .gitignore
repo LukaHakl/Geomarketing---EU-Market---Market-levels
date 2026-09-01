@@ -1,0 +1,18 @@
+# Downloaded source data. Everything here is re-fetchable by the build script
+# and none of it belongs in git: the Overpass cache alone is ~40 MB.
+cache/
+overpass_cache/
+
+# Build output. eu_market_map.geojson is committed deliberately (it is the
+# deliverable you upload to MapTiler), so it is NOT ignored here — but any
+# variant build is.
+eu_market_map_small.geojson
+*_small.geojson
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.env
+.DS_Store
